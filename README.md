@@ -6,6 +6,6 @@ Example
 
 ```
 ./count_orgs.rb example_input.csv 
-Ohio SuperComuter Center: 1
+Ohio SuperComuter Center: 3
 Oak Ridge National Lab: 2
 ```
