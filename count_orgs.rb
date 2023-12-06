@@ -11,7 +11,7 @@ aliases = YAML.safe_load(File.read("#{__dir__}/alias_map.yml"))
 input_file = ARGV.first.to_s
 abort('You need to specify a file to read in $1') if input_file.empty?
 
-lines = File.read(input_file).each_line.map do |line|
+File.read(input_file).each_line.map do |line|
   line = line.to_s.chomp.downcase
   aliases.map do |org, org_aliases|
     [org, 1] if org_aliases.include?(line) || org.downcase == line
